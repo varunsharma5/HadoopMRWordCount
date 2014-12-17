@@ -7,6 +7,11 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
+/**
+ * Mapper class for Work Count Example
+ * @author varun
+ *
+ */
 public class WordCountMapper extends Mapper<LongWritable, Text, Text, IntWritable>{
 	//Defining a local variable one of type IntWritable
 	private final static IntWritable one = new IntWritable(1);
